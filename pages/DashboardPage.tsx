@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Section } from '../components/Section';
 import { Button } from '../components/Button';
@@ -32,10 +31,10 @@ const tiers: PriceTier[] = [
 
 const DashboardPage: React.FC = () => {
   return (
-    <div className="bg-[#050505] min-h-screen relative overflow-x-hidden">
-      {/* Dynamic Background Accents */}
-      <div className="fixed top-[10%] left-[-10%] w-[50%] h-[50%] bg-indigo-600/5 blur-[120px] rounded-full pointer-events-none" />
-      <div className="fixed bottom-[10%] right-[-10%] w-[50%] h-[50%] bg-emerald-600/5 blur-[120px] rounded-full pointer-events-none" />
+    <div className="bg-[#050505] min-h-screen relative overflow-x-hidden pb-20">
+      {/* Cinematic Background Glows */}
+      <div className="fixed top-[-10%] left-[-10%] w-[50%] h-[50%] bg-indigo-600/5 blur-[120px] rounded-full pointer-events-none" />
+      <div className="fixed bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-emerald-600/5 blur-[120px] rounded-full pointer-events-none" />
 
       {/* Premium Header */}
       <header className="sticky top-0 z-50 glass-dark border-b border-white/5 px-6 py-4">
@@ -46,19 +45,19 @@ const DashboardPage: React.FC = () => {
           </div>
           <div className="flex items-center gap-6">
             <div className="hidden md:flex flex-col items-end gap-1">
-              <span className="text-[9px] text-zinc-500 font-bold uppercase tracking-[0.2em]">Система готова к запуску</span>
+              <span className="text-[9px] text-zinc-500 font-bold uppercase tracking-[0.2em]">Система готова</span>
               <div className="w-32 h-1 bg-zinc-900 rounded-full overflow-hidden">
                 <div className="w-[15%] h-full bg-gradient-to-r from-indigo-500 to-violet-500 animate-pulse" />
               </div>
             </div>
-            <div className="w-10 h-10 rounded-xl glass border border-white/10 flex items-center justify-center text-xs font-bold hover:border-indigo-500/50 transition-colors cursor-pointer">
-              JD
+            <div className="w-10 h-10 rounded-xl glass border border-white/10 flex items-center justify-center text-xs font-bold hover:border-indigo-500/50 transition-colors cursor-pointer uppercase tracking-widest">
+              ID
             </div>
           </div>
         </div>
       </header>
 
-      {/* Dashboard Hero */}
+      {/* Hero Content */}
       <Section className="text-center pt-20 pb-10">
         <div className="reveal-text inline-block mb-4">
           <span className="text-indigo-400 font-bold text-[10px] uppercase tracking-[0.4em] bg-indigo-500/10 px-3 py-1 rounded-full border border-indigo-500/20">
@@ -74,7 +73,7 @@ const DashboardPage: React.FC = () => {
         </p>
       </Section>
 
-      {/* Interactive Path Visualization */}
+      {/* Path Visualization with Premium Glass Container */}
       <Section className="py-0">
         <div className="glass p-8 md:p-12 rounded-[3rem] border-white/5 relative overflow-hidden">
           <div className="absolute top-0 right-0 p-10 opacity-[0.03] pointer-events-none">
@@ -84,7 +83,7 @@ const DashboardPage: React.FC = () => {
         </div>
       </Section>
 
-      {/* Results Bento Grid (Same premium style as Page A) */}
+      {/* Benefits Bento Grid */}
       <Section>
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold tracking-tight">Что ты получишь на выходе</h2>
@@ -100,12 +99,12 @@ const DashboardPage: React.FC = () => {
               </div>
               <h3 className="text-3xl font-bold mb-4">AI-Профиль 2025</h3>
               <p className="text-zinc-400 text-lg leading-relaxed">
-                Полностью упакованное портфолио и CV, адаптированное под алгоритмы международных компаний.
+                Полностью упакованное CV и портфолио, оптимизированное под алгоритмы найма топ-компаний.
               </p>
             </div>
             <div className="mt-8 flex items-center gap-4 text-xs font-bold uppercase tracking-widest text-indigo-400">
               <span className="flex h-2 w-2 rounded-full bg-indigo-500 animate-ping"></span>
-              Готовность к офферу: 100%
+              Готовность системы: 100%
             </div>
           </div>
 
@@ -114,7 +113,7 @@ const DashboardPage: React.FC = () => {
             <div className="text-4xl">🛠️</div>
             <div>
               <h4 className="font-bold text-xl text-white">Hard Skills</h4>
-              <p className="text-sm text-zinc-500">Владение инструментами, которые реально просят на интервью.</p>
+              <p className="text-sm text-zinc-500">Набор инструментов, которые реально просят на интервью в 2025 году.</p>
             </div>
           </div>
 
@@ -123,22 +122,22 @@ const DashboardPage: React.FC = () => {
             <div className="text-4xl">🤝</div>
             <div>
               <h4 className="font-bold text-xl text-white">Доступ к лидам</h4>
-              <p className="text-sm text-zinc-500">Прямой выход на HR и тимлидов топовых компаний Азербайджана.</p>
+              <p className="text-sm text-zinc-500">Прямой выход на HR и руководителей ведущих IT-компаний страны.</p>
             </div>
           </div>
         </div>
       </Section>
 
-      {/* Anti-Hype / Efficiency Section */}
-      <Section className="bg-zinc-950/40">
+      {/* Anti-Hype Section */}
+      <Section className="bg-zinc-950/40 py-16">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl md:text-4xl font-bold mb-12 text-center tracking-tight">Мы удалили всё лишнее</h2>
+          <h2 className="text-2xl md:text-4xl font-bold mb-12 text-center tracking-tight text-white">Мы удалили всё лишнее</h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {[
               "Бесконечные лекции 'ни о чем'",
-              "Старые методы поиска через знакомых",
-              "Страх перед будущим и AI",
-              "Ощущение, что ты не на своем месте"
+              "Старые методы поиска по знакомству",
+              "Тревогу перед искусственным интеллектом",
+              "Хаотичные отклики в пустоту"
             ].map((text, i) => (
               <div key={i} className="group p-6 glass rounded-2xl border-white/5 hover:border-red-500/20 transition-all flex items-center gap-4">
                 <div className="w-8 h-8 shrink-0 rounded-full bg-red-500/10 flex items-center justify-center text-red-500 font-bold group-hover:scale-110 transition-transform">
@@ -155,7 +154,7 @@ const DashboardPage: React.FC = () => {
       <Section id="pricing" className="pb-40">
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-6xl font-black mb-6 tracking-tight">Начни сейчас.</h2>
-          <p className="text-zinc-500 text-lg">Выбери формат, который подходит твоему амбициям.</p>
+          <p className="text-zinc-500 text-lg">Выбери формат, который соответствует твоим амбициям.</p>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8 items-stretch">
@@ -170,7 +169,7 @@ const DashboardPage: React.FC = () => {
             >
               {tier.isAnchor && (
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-indigo-500 to-violet-500 text-white text-[10px] font-black px-6 py-2 rounded-full uppercase tracking-widest shadow-xl">
-                  Популярный выбор
+                  Максимальный эффект
                 </div>
               )}
               
@@ -214,7 +213,7 @@ const DashboardPage: React.FC = () => {
       <footer className="py-20 border-t border-white/5 glass-dark">
         <div className="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-12">
            <div className="flex flex-col items-center md:items-start gap-4">
-             <div className="text-2xl font-black tracking-tighter">TAPLA<span className="text-indigo-500">.</span></div>
+             <div className="text-2xl font-black tracking-tighter uppercase">TAPLA<span className="text-indigo-500">.</span></div>
              <p className="text-zinc-600 text-sm max-w-xs text-center md:text-left">Профессиональная трансформация для нового поколения Азербайджана.</p>
            </div>
            
@@ -223,21 +222,19 @@ const DashboardPage: React.FC = () => {
                <span className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest">Продукт</span>
                <a href="#" className="text-zinc-400 hover:text-white transition-colors text-sm">Программа</a>
                <a href="#" className="text-zinc-400 hover:text-white transition-colors text-sm">Тарифы</a>
-               <a href="#" className="text-zinc-400 hover:text-white transition-colors text-sm">Кейсы</a>
              </div>
              <div className="flex flex-col gap-4">
                <span className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest">Помощь</span>
                <a href="#" className="text-zinc-400 hover:text-white transition-colors text-sm">FAQ</a>
                <a href="#" className="text-zinc-400 hover:text-white transition-colors text-sm">Поддержка</a>
-               <a href="#" className="text-zinc-400 hover:text-white transition-colors text-sm">Telegram</a>
              </div>
            </div>
         </div>
         <div className="max-w-7xl mx-auto px-8 mt-20 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 opacity-40">
            <div className="text-[10px] tracking-[0.3em] font-medium uppercase">© 2025 TAPLA AZ • Все права защищены</div>
            <div className="flex gap-6 text-[9px] font-bold uppercase tracking-widest">
-             <a href="#" className="hover:text-white">Privacy Policy</a>
-             <a href="#" className="hover:text-white">Terms of Service</a>
+             <a href="#" className="hover:text-white">Privacy</a>
+             <a href="#" className="hover:text-white">Terms</a>
            </div>
         </div>
       </footer>

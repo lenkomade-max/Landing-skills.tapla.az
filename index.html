@@ -18,12 +18,12 @@
             -webkit-font-smoothing: antialiased;
             background-color: #050505;
             color: #fff;
+            margin: 0;
         }
         h1, h2, h3 {
             font-family: 'Montserrat', sans-serif;
         }
         
-        /* Noise Overlay */
         .noise {
             position: fixed;
             top: 0;
@@ -50,7 +50,6 @@
             border: 1px solid rgba(255, 255, 255, 0.05);
         }
 
-        /* Border Beam Animation */
         @keyframes shine {
             0% { left: -100%; }
             50% { left: 100%; }
@@ -72,7 +71,6 @@
             animation: shine 3s infinite linear;
         }
 
-        /* Bento Grid Shadows */
         .bento-card {
             transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
         }
@@ -83,7 +81,6 @@
             box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.5);
         }
 
-        /* Text Reveal Effect */
         .reveal-text {
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
         }
@@ -94,10 +91,12 @@
             mix-blend-mode: plus-lighter;
         }
     </style>
-<script type="importmap">
+    <script type="importmap">
 {
   "imports": {
-    "react": "https://esm.sh/react@^19.2.3",
+    "react": "https://esm.sh/react@19.0.0",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
     "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
     "react/": "https://esm.sh/react@^19.2.3/"
   }
@@ -107,5 +106,6 @@
 <body class="bg-[#050505] overflow-x-hidden">
     <div class="noise"></div>
     <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
 </body>
 </html>
